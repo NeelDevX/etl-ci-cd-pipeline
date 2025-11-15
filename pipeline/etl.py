@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def clean_data(df):
     """
     Drops duplicates and fills missing amounts with 0.
@@ -22,3 +23,4 @@ def run_etl(input_path, output_path):
 
 if __name__ == "__main__":
     run_etl("data/input.csv", "data/output.csv")
+    
