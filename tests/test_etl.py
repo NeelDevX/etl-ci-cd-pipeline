@@ -7,4 +7,3 @@ def test_clean_data():
     clean_df = clean_data(df)
 
     assert clean_df["amount"].isna().sum() == 0
-
