@@ -30,3 +30,6 @@ jobs:
 
       - name: Run tests
         run: pytest -q
+
+      - name: Run ETL script
+        run: python pipeline/etl.py data/input.csv data/output.csv
