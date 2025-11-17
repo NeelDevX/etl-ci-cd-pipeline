@@ -1,4 +1,7 @@
 import pandas as pd
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def clean_data(df):
@@ -24,6 +27,7 @@ def run_etl(input_path, output_path):
 if __name__ == "__main__":
     import sys
 
-    input_path = sys.argv[1]
-    output_path = sys.argv[2]
+    input_path = os.path.join(BASE_DIR, sys.argv[1])
+    output_path = os.path.join(BASE_DIR, sys.argv[2])
+
     run_etl(input_path, output_path)
