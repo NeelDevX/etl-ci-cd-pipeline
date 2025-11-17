@@ -1,5 +1,4 @@
 import pandas as pd
-
 from pipeline.etl import clean_data
 
 
