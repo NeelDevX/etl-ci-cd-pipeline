@@ -22,4 +22,8 @@ def run_etl(input_path, output_path):
 
 
 if __name__ == "__main__":
-    run_etl("data/input.csv", "data/output.csv")
+    import sys
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
+    run_etl(input_path, output_path)
+
